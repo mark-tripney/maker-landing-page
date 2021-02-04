@@ -3,17 +3,100 @@
 // **************************************************
 
 // COLORS
-$background-color: #080C20;
+$main-background: #080C20;
 $white-text: #fff;
-$blue-text: #3EE9E5;
+$blue-emphasis: #3EE9E5;
+$p-text: #777F98;
 // WEIGHTS
-$bold: 800;
+$light: 200;
 $medium: 500;
+$bold: 800;
+
 
 
 // **************************************************
 // GLOBAL
 // **************************************************
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: $main-background;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  max-width: 88%;
+  margin: 0 auto;
+  align-items: center;
+  text-align: center;
+  color: $white-text;
+}
+
+
+
+// **************************************************
+// TYPE
+// **************************************************
+
+body {
+  font-family: 'Manrope', sans-serif;
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: $bold;
+}
+
+.intro h1 {
+  width: 75%;
+  margin: 0 auto 23px;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: $bold;
+  margin-bottom: 11px;
+}
+
+p {
+  color: $p-text;
+  font-weight: $light;
+  font-size: 15px;
+  line-height: 25px;
+}
+
+.emphasis {
+  color: $blue-emphasis;
+}
+
+
+// **************************************************
+// HEADER
+// **************************************************
+
+header {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.logo {
+  width: 120px;
+  margin-top: 40px;
+  align-self: center;
+}
+
+.hero-mobile {
+  max-width: 108.946%;
+  margin-top: 66px;
+  margin-bottom: 49px;
+  align-self: flex-start;
+}
 
 
 
@@ -21,3 +104,38 @@ $medium: 500;
 // IMAGES
 // **************************************************
 
+.scroll-img {
+  width: 26px;
+  margin-top: 32px;
+  margin-bottom: 144px;
+}
+
+.img-wrapper {
+  height: 124px;
+  width: 120px;
+  background-color: #093F68;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 40px;
+  margin-bottom: 32px;
+}
+
+.divider-img {
+  width: 66px;
+  background-color: #093F68;
+}
+
+.img-wrapper:not(.first-divider) {
+  margin-top: 56px;
+}
+
+
+
+// **************************************************
+// PRICING PLANS
+// **************************************************
+
+.pricing-plans {
+  margin-top: 144px;
+}
