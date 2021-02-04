@@ -4,6 +4,9 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+body {
   background-color: #080C20;
 }
 
@@ -29,6 +32,13 @@ h1 {
 .intro h1 {
   width: 75%;
   margin: 0 auto 23px;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 800;
+  margin-top: 144px;
+  margin-bottom: 27px;
 }
 
 h3 {
@@ -86,13 +96,85 @@ header {
 
 .divider-img {
   width: 66px;
-  background-color: #093F68;
 }
 
 .img-wrapper:not(.first-divider) {
   margin-top: 56px;
 }
 
+.free-img,
+.paid-img {
+  position: relative;
+}
+
+.free-img {
+  margin-top: 56px;
+  top: 28px;
+  left: 30px;
+}
+
+.paid-img {
+  top: 38px;
+  left: 37px;
+}
+
 .pricing-plans {
-  margin-top: 144px;
+  margin-top: -40px;
+  text-align: left;
+}
+.pricing-plans ul {
+  list-style-position: inside;
+  list-style-type: none;
+  font-weight: 200;
+}
+.pricing-plans ul :not(:last-child) {
+  padding-bottom: 12px;
+}
+.pricing-plans h3 {
+  padding-top: 49px;
+}
+.pricing-plans h1 {
+  padding-top: 51px;
+  padding-bottom: 19px;
+}
+
+.free-pricing,
+.paid-pricing {
+  padding: 0 29px 32px 30px;
+  border-radius: 8px;
+}
+.free-pricing h1,
+.paid-pricing h1 {
+  font-size: 40px;
+}
+
+.free-pricing {
+  background-color: #093F68;
+}
+.free-pricing li::before {
+  content: url("../assets/icon-check.svg");
+  padding-right: 15px;
+}
+
+.paid-pricing {
+  background-color: #3EE9E5;
+  color: #080C20;
+}
+.paid-pricing li::before {
+  content: url("../assets/icon-check-dark.svg");
+  padding-right: 15px;
+}
+.paid-pricing h3 {
+  padding-top: 61px;
+}
+
+.paid-price {
+  display: flex;
+}
+
+.per-month {
+  font-weight: 200;
+  font-size: 15px;
+  padding-left: 10px;
+  align-self: center;
 }
