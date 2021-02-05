@@ -15,20 +15,28 @@
 </head>
 <body>
   <header>
-    <img src="assets/logo.svg" class="logo" alt="Maker logo">
-    <img src="assets/illustration-hero-mobile.png" class="hero-mobile"
-        alt="Illustration of people working, talking, and thinking">
+    <img src="assets/logo.svg" class="logo"
+        alt="Maker logo">
+    <section class="intro-wrapper">
+      <img src="assets/illustration-hero-left.svg" class="hero-left"
+          alt="Illustration of people working, talking, and thinking">
+      <img src="assets/illustration-hero-mobile.png" class="hero-mobile"
+          alt="Illustration of people working, talking, and thinking">
+      <section class="intro">
+        <h1>Get paid for the work you <span class="emphasis">love</span> to do.
+        </h1>
+        <p>The 9-5 grind is so last century. We believe in living life on your
+          own
+          terms. Whether you’re looking to escape the rat race or
+          set up a side hustle, we’ve got you covered.</p>
+        <img src="assets/icon-scroll.svg"
+            class="scroll-img" alt="Computer mouse with scroll-wheel">
+      </section>
+      <img src="assets/illustration-hero-right.svg" class="hero-right"
+          alt="Illustration of people working, talking, and thinking">
+    </section>
   </header>
   <main>
-    <section class="intro">
-      <h1>Get paid for the work you <span class="emphasis">love</span> to do.
-      </h1>
-      <p>The 9-5 grind is so last century. We believe in living life on your own
-        terms. Whether you’re looking to escape the rat race or
-        set up a side hustle, we’ve got you covered.</p>
-    </section>
-    <img src="assets/icon-scroll.svg"
-        class="scroll-img" alt="Computer mouse with scroll-wheel">
     <div class="img-wrapper first-divider">
       <img src="assets/illustration-passions.svg"
           class="divider-img"
@@ -96,11 +104,12 @@
       </section>
     </section>
 
-    <label for="email-notification">Get notified when we launch
+    <label for="email-notification" class="email-label">Get notified when we
+      launch
       <input type="email" name="email" id="email-notification"
           placeholder="Email address">
     </label>
-    <button>Get notified</button>
+    <button id="notify">Get notified</button>
   </main>
 </body>
 </html>
