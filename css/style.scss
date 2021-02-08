@@ -51,7 +51,9 @@ p {
   color: $grey;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-weight: $xbold;
   color: $white;
 }
@@ -199,7 +201,8 @@ header {
   text-align: left;
   border-radius: 10px;
 
-  p, li {
+  p,
+  li {
     font-weight: $xlight;
   }
 
@@ -220,7 +223,8 @@ h1.price-plan.paid {
   background-color: $denim;
   margin: 79px 0 65px;
 
-  p, li {
+  p,
+  li {
     color: $white;
   }
 
@@ -238,7 +242,10 @@ h1.price-plan.paid {
 .paid-plan {
   background-color: $mint-blue;
 
-  h1, h3, p, li {
+  h1,
+  h3,
+  p,
+  li {
     color: $off-black;
   }
 
@@ -266,13 +273,13 @@ h1.price-plan.paid {
 // **************************************************
 
 .notify {
-  position: relative;
-  top: -20px;
+  // position: relative;
+  // top: -20px;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  background-image: url("../assets/bg-footer-squiggle.svg");
+  background-image: url('../assets/bg-footer-squiggle.svg');
   background-size: contain;
   background-repeat: no-repeat;
 
@@ -340,8 +347,12 @@ h1.price-plan.paid {
     width: 317px;
     margin-right: -171px;
   }
+  .header-wrapper {
+    background: url("../assets/bg-hero-squiggle.svg") no-repeat center center;
+    background-size: 50% 100%;
+  }
   .header-text {
-    width: 60%;
+    width: 55%;
   }
 
   .incentives {
@@ -372,9 +383,11 @@ h1.price-plan.paid {
     display: flex;
     flex-direction: column;
     align-items: center;
+
     .pricing-intro {
       width: 70%;
     }
+
     .plan {
       width: 58%;
     }
@@ -390,12 +403,65 @@ h1.price-plan.paid {
   }
 
   .notify {
+    background: url('../assets/bg-footer-squiggle.svg') no-repeat center center;
+    width: 100%;
+    height: 140px;
+    background-size: 100% 140px, contain;
+
     #email-notification {
       margin: 0 16px 0 0;
       width: 67%;
     }
+
     .notify-btn {
       width: 29%;
     }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .logo {
+    margin: 81px 0 114px 165px;
+  }
+  .hero-left {
+    width: 408px;
+    margin-left: -53px;
+  }
+  .hero-right {
+    width: 396px;
+    margin-right: -60px;
+  }
+  .header-text {
+    p {
+      width: 65%;
+    }
+
+    h1 {
+      font-size: 48px;
+    }
+  }
+  .header-wrapper {
+    background: url("../assets/bg-hero-squiggle.svg") no-repeat top center;
+    background-size: 40% 75%, contain;
+  }
+
+  .incentives {
+    flex-direction: row;
+    width: 77%;
+    justify-content: space-between;
+  }
+  .incentive {
+    width: 255px;
+    flex-direction: column;
+    align-items: flex-start;
+    &:nth-child(odd) {
+      margin-left: 0;
+    }
+    &:nth-child(even) {
+      margin-top: 42px;
+    }
+  }
+  .incentive-text {
+    margin: 0;
   }
 }

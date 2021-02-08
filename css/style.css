@@ -27,7 +27,9 @@ p {
   color: #777f98;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-weight: 800;
   color: #fff;
 }
@@ -155,7 +157,8 @@ header {
   text-align: left;
   border-radius: 10px;
 }
-.free-plan p, .free-plan li,
+.free-plan p,
+.free-plan li,
 .paid-plan p,
 .paid-plan li {
   font-weight: 200;
@@ -177,7 +180,8 @@ h1.price-plan.paid {
   background-color: #093f68;
   margin: 79px 0 65px;
 }
-.free-plan p, .free-plan li {
+.free-plan p,
+.free-plan li {
   color: #fff;
 }
 .free-plan .free-img {
@@ -192,7 +196,10 @@ h1.price-plan.paid {
 .paid-plan {
   background-color: #3ee9e5;
 }
-.paid-plan h1, .paid-plan h3, .paid-plan p, .paid-plan li {
+.paid-plan h1,
+.paid-plan h3,
+.paid-plan p,
+.paid-plan li {
   color: #080c20;
 }
 .paid-plan .paid-img {
@@ -212,8 +219,6 @@ h1.price-plan.paid {
 }
 
 .notify {
-  position: relative;
-  top: -20px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -286,8 +291,13 @@ h1.price-plan.paid {
     margin-right: -171px;
   }
 
+  .header-wrapper {
+    background: url("../assets/bg-hero-squiggle.svg") no-repeat center center;
+    background-size: 50% 100%;
+  }
+
   .header-text {
-    width: 60%;
+    width: 55%;
   }
 
   .incentives {
@@ -337,11 +347,66 @@ h1.price-plan.paid {
     width: 62%;
   }
 
+  .notify {
+    background: url("../assets/bg-footer-squiggle.svg") no-repeat center center;
+    width: 100%;
+    height: 140px;
+    background-size: 100% 140px, contain;
+  }
   .notify #email-notification {
     margin: 0 16px 0 0;
     width: 67%;
   }
   .notify .notify-btn {
     width: 29%;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .logo {
+    margin: 81px 0 114px 165px;
+  }
+
+  .hero-left {
+    width: 408px;
+    margin-left: -53px;
+  }
+
+  .hero-right {
+    width: 396px;
+    margin-right: -60px;
+  }
+
+  .header-text p {
+    width: 65%;
+  }
+  .header-text h1 {
+    font-size: 48px;
+  }
+
+  .header-wrapper {
+    background: url("../assets/bg-hero-squiggle.svg") no-repeat top center;
+    background-size: 40% 75%, contain;
+  }
+
+  .incentives {
+    flex-direction: row;
+    width: 77%;
+    justify-content: space-between;
+  }
+
+  .incentive {
+    width: 255px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .incentive:nth-child(odd) {
+    margin-left: 0;
+  }
+  .incentive:nth-child(even) {
+    margin-top: 42px;
+  }
+
+  .incentive-text {
+    margin: 0;
   }
 }
