@@ -429,6 +429,7 @@ h2.price-plan.paid {
     width: 77%;
     justify-content: space-between;
     margin-top: 202px;
+    margin-bottom: 202px;
   }
 
   .incentive-img-wrapper {
@@ -448,6 +449,22 @@ h2.price-plan.paid {
   }
   .incentive:nth-child(even) {
     margin-top: 42px;
+  }
+
+  .passions-img {
+    width: 88px;
+  }
+
+  .freedom-img {
+    width: 74px;
+  }
+
+  .lifestyle-img {
+    width: 80px;
+  }
+
+  .anywhere-img {
+    width: 104px;
   }
 
   .incentive-text {
