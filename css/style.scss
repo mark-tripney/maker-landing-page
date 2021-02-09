@@ -472,6 +472,7 @@ h2.price-plan.paid {
     }
 
     h1 {
+      margin-top: -40px;
       font-size: 48px;
     }
   }
@@ -484,11 +485,18 @@ h2.price-plan.paid {
     flex-direction: row;
     width: 77%;
     justify-content: space-between;
+    margin-top: 202px;
+  }
+  .incentive-img-wrapper {
+    height: 164px;
+    min-width: 160px;
+    margin-bottom: 48px;
   }
   .incentive {
     width: 255px;
     flex-direction: column;
     align-items: flex-start;
+    margin-bottom: 0;
 
     &:nth-child(odd) {
       margin-left: 0;
@@ -500,6 +508,15 @@ h2.price-plan.paid {
   }
   .incentive-text {
     margin: 0;
+    h3 {
+      margin-bottom: 24px;
+    }
+    p {
+      width: 110%;
+    }
+  }
+  .pricing-intro h2 {
+    font-size: 32px;
   }
   .pricing-intro p {
     width: 55%;
@@ -522,5 +539,15 @@ h2.price-plan.paid {
   .free-plan {
     margin: 0;
     height: 425px;
+  }
+}
+
+#notification-form {
+  .email-label {
+    font-size: 32px;
+    margin-bottom: 42px;
+  }
+  .notify-inputs {
+    margin-top: 0;
   }
 }
