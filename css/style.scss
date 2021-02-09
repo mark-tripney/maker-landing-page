@@ -195,6 +195,15 @@ header {
   }
 }
 
+.plan-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .plan {
+    width: 80%;
+  }
+}
+
 .free-plan,
 .paid-plan {
   padding: 0 30px;
@@ -273,8 +282,6 @@ h1.price-plan.paid {
 // **************************************************
 
 .notify {
-  // position: relative;
-  // top: -20px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -389,7 +396,7 @@ h1.price-plan.paid {
     }
 
     .plan {
-      width: 58%;
+      width: 65%;
     }
   }
 
@@ -462,6 +469,23 @@ h1.price-plan.paid {
     }
   }
   .incentive-text {
+    margin: 0;
+  }
+  .pricing-intro p {
+    width: 55%;
+    margin: 0 auto 72px;
+  }
+  .plan-info {
+    flex-direction: row;
+    width: 920px;
+    height: 482px;
+    justify-content: space-between;
+    align-items: center;
+    .plan {
+      width: 445px;
+    }
+  }
+  .free-plan {
     margin: 0;
   }
 }
