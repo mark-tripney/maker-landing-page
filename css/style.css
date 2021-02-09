@@ -41,9 +41,6 @@ h1 {
 h1 .highlight {
   color: #3ee9e5;
 }
-h1.price-plan {
-  font-size: 40px;
-}
 
 h2 {
   font-size: 24px;
@@ -157,7 +154,11 @@ header {
   align-items: center;
 }
 .plan-info .plan {
-  width: 80%;
+  width: 100%;
+}
+
+h2.price-plan {
+  font-size: 40px;
 }
 
 .free-plan,
@@ -172,16 +173,16 @@ header {
 .paid-plan li {
   font-weight: 200;
 }
-.free-plan h1,
-.paid-plan h1 {
-  padding: 51px 0 19px;
+.free-plan h2,
+.paid-plan h2 {
+  padding: 26px 0 19px;
 }
 .free-plan h3,
 .paid-plan h3 {
   padding-bottom: 19px;
 }
 
-h1.price-plan.paid {
+h2.price-plan.paid {
   display: flex;
 }
 
@@ -205,7 +206,7 @@ h1.price-plan.paid {
 .paid-plan {
   background-color: #3ee9e5;
 }
-.paid-plan h1,
+.paid-plan h2,
 .paid-plan h3,
 .paid-plan p,
 .paid-plan li {
@@ -255,6 +256,11 @@ h1.price-plan.paid {
   margin-bottom: 24px;
   margin-top: 31px;
 }
+#notification-form #email-notification:focus {
+  color: #fff;
+  box-shadow: inset 0 0 0 2px #3ee9e5;
+  outline: none;
+}
 #notification-form .notify-btn {
   width: 88%;
   border: 0;
@@ -264,6 +270,26 @@ h1.price-plan.paid {
   font-size: 15px;
   color: #093f68;
   background-color: #3ee9e5;
+}
+#notification-form .notify-btn:hover {
+  background-color: #080c20;
+  box-shadow: inset 0 0 0 2px #3ee9e5;
+  color: #fff;
+}
+
+.error-msg {
+  height: 15px;
+  margin-top: 10px;
+  align-self: center;
+  margin-bottom: -25px;
+  padding: 0;
+  font-size: 15px;
+  color: #ff2965;
+  box-sizing: border-box;
+}
+
+.error-input {
+  box-shadow: 0 0 0 2px #ff2965;
 }
 
 @media screen and (min-width: 768px) {
@@ -432,10 +458,14 @@ h1.price-plan.paid {
     align-items: center;
   }
   .plan-info .plan {
-    width: 445px;
+    width: 430px;
+  }
+  .plan-info .plan p {
+    font-weight: 500;
   }
 
   .free-plan {
     margin: 0;
+    height: 425px;
   }
 }
