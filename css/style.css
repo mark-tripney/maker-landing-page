@@ -228,6 +228,10 @@ h2.price-plan.paid {
   padding-left: 10px;
 }
 
+section.pricing {
+  margin-bottom: 203px;
+}
+
 #notification-form {
   display: flex;
   flex-direction: column;
