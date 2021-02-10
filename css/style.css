@@ -441,7 +441,7 @@ h2.price-plan.paid {
     width: 77%;
     justify-content: space-between;
     margin-top: 202px;
-    margin-bottom: 202px;
+    margin-bottom: 205px;
   }
 
   .incentive-img-wrapper {
@@ -489,13 +489,17 @@ h2.price-plan.paid {
     width: 110%;
   }
 
+  .pricing {
+    margin-bottom: 203px;
+  }
+
   .pricing-intro h2 {
     font-size: 32px;
   }
 
   .pricing-intro p {
     width: 55%;
-    margin: 0 auto 72px;
+    margin: 0 auto 105px;
   }
 
   .plan-info {
