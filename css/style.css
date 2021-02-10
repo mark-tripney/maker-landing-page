@@ -1,3 +1,4 @@
+@charset "UTF-8";
 *,
 *::before,
 *::after {
@@ -14,10 +15,6 @@ body {
 main {
   max-width: 88%;
   margin: 0 auto;
-}
-
-section {
-  margin-bottom: 144px;
 }
 
 p {
@@ -52,6 +49,7 @@ h3 {
 
 header {
   overflow: hidden;
+  margin-bottom: 144px;
 }
 
 .logo {
@@ -88,13 +86,13 @@ header {
 }
 
 .incentives {
-  margin-top: 144px;
   width: 100%;
   height: 1134px;
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin-bottom: 144px;
 }
 
 .incentive {
@@ -132,9 +130,7 @@ header {
 
 .pricing {
   text-align: center;
-}
-.pricing h2 {
-  margin-bottom: 27px;
+  margin-bottom: 144px;
 }
 .pricing ul {
   list-style-position: inside;
@@ -228,10 +224,6 @@ h2.price-plan.paid {
   padding-left: 10px;
 }
 
-section.pricing {
-  margin-bottom: 203px;
-}
-
 #notification-form {
   display: flex;
   flex-direction: column;
@@ -246,9 +238,10 @@ section.pricing {
   font-weight: 800;
   color: #fff;
   width: 65%;
+  margin-bottom: 31px;
 }
 #notification-form #email-notification {
-  width: 88%;
+  width: 100%;
   height: 48px;
   border-radius: 30px;
   border: none;
@@ -258,7 +251,6 @@ section.pricing {
   font-weight: 800;
   font-size: 15px;
   margin-bottom: 24px;
-  margin-top: 31px;
 }
 #notification-form #email-notification:focus {
   color: #fff;
@@ -266,7 +258,7 @@ section.pricing {
   outline: none;
 }
 #notification-form .notify-btn {
-  width: 88%;
+  width: 100%;
   border: 0;
   height: 48px;
   border-radius: 50px;
@@ -274,6 +266,7 @@ section.pricing {
   font-size: 15px;
   color: #093f68;
   background-color: #3ee9e5;
+  margin-bottom: 164px;
 }
 #notification-form .notify-btn:hover {
   background-color: #080c20;
@@ -353,6 +346,9 @@ section.pricing {
   .incentive:nth-child(odd) {
     margin-left: 58px;
   }
+  .incentive:last-child {
+    margin-bottom: 0;
+  }
 
   .incentive-text {
     flex-direction: column;
@@ -369,12 +365,17 @@ section.pricing {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 135px;
   }
   .pricing .pricing-intro {
     width: 70%;
   }
   .pricing .plan {
-    width: 65%;
+    max-width: 445px;
+    max-height: 425pxπ;
+  }
+  .pricing .plan ul li:last-child {
+    padding-bottom: 60px;
   }
 
   .notify-inputs {
@@ -383,7 +384,8 @@ section.pricing {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    width: 62%;
+    width: 476px;
+    padding-bottom: 16px;
   }
 
   #notification-form {
@@ -391,13 +393,19 @@ section.pricing {
     width: 100%;
     height: 140px;
     background-size: 100% 140px, contain;
+    margin-bottom: 105px;
+  }
+  #notification-form label.email-label {
+    font-size: 24px;
+    margin-bottom: 0;
   }
   #notification-form #email-notification {
     margin: 0 16px 0 0;
-    width: 67%;
+    width: 320px;
   }
   #notification-form .notify-btn {
-    width: 29%;
+    width: 140px;
+    margin-bottom: 0;
   }
 }
 @media screen and (min-width: 1440px) {
@@ -498,7 +506,7 @@ section.pricing {
     align-items: center;
   }
   .plan-info .plan {
-    width: 430px;
+    width: 445px;
   }
   .plan-info .plan p {
     font-weight: 500;
@@ -506,13 +514,23 @@ section.pricing {
 
   .free-plan {
     margin: 0;
-    height: 425px;
+    max-height: 425px;
   }
-}
-#notification-form .email-label {
-  font-size: 32px;
-  margin-bottom: 42px;
-}
-#notification-form .notify-inputs {
-  margin-top: 0;
+
+  .paid-plan {
+    padding-top: 3px;
+    padding-bottom: 3px;
+  }
+  .paid-plan .paid-img {
+    position: relative;
+    top: -36px;
+    margin-bottom: -13px;
+  }
+
+  #notification-form label.email-label {
+    font-size: 32px;
+  }
+  #notification-form .notify-inputs {
+    margin-top: 42px;
+  }
 }
